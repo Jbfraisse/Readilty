@@ -1,0 +1,91 @@
+\documentclass{rapportINSA}
+\usepackage{lipsum}
+\usepackage{ulem}
+\usepackage{subfiles}
+\title{READLITY} %Titre du fichier
+
+\begin{document}
+
+%----------- Informations du rapport ---------
+
+\titreimg{\includegraphics[width=0.7\textwidth]{logos/READLITY_phrase.png}} %Titre
+\titre{READLITY}
+\UE{Projet Électronique} %Nom de la UE
+\sujet{Cahier des Charge} %Nom du sujet
+
+
+\enseignant{Fanny \textsc{Gourret} \\
+			Fabienne \textsc{Nouvel} \\
+			Yvon \textsc{Dutertre} \\
+            Christophe \textsc{Lemoine}
+            } %Nom des enseignants
+
+\eleves{Milène \textsc{Bourasseau} \\
+		Jeremy \textsc{Guillaume} \\
+        Hugo \textsc{Azzopardi} \\
+        Tudy \textsc{Gourmelen} \\
+        Vincent \textsc{Morillon} \\
+        Jean-Baptiste \textsc{Fraisse} \\
+        Anping \textsc{Zhao} \\
+        Yidi \textsc{Qiu} \\
+        Yuna \textsc{Queniat} \\
+        Julien \textsc{MoreauU} \\
+        Morgan \textsc{Kelechian}
+        }
+
+%----------- Initialisation -------------------
+
+\fairemarges %Afficher les marges
+\fairepagedegarde %Créer la page de garde
+\tabledematieres %Créer la table de matières
+
+
+%----------------------------------------------
+%------------ Corps du rapport ----------------
+%----------------------------------------------
+
+%------------ INTRODUCTION --------------------
+
+\section{Introduction}
+\subfile{Common/Intro.tex}
+\newpage
+
+%------------ Etat de l'art --------------------
+
+\section{Etat de l'art}
+\subfile{Common/Etat_De_L_Art.tex}
+\newpage
+
+%------------ PARTIE CALIBRATION ----------------
+
+\section{Partie Calibration}
+\label{sec:calib}
+\subfile{Calibration/main.tex}
+\newpage
+
+
+%------------ PARTIE TRAITEMENT D'IMAGES --------------------
+\section{Partie Traitement d'images}
+\label{sec:TI}
+\subfile{Traitement_Images/main.tex}
+\newpage
+
+%------------ PARTIE 3D ----------------
+
+\section{Partie 3D}
+\label{sec:3d}
+\subfile{3D/main.tex}
+\newpage
+
+%------------ Conclusion ----------------
+
+\section{Conclusion}
+\label{sec:ccl}
+\subfile{Common/Conclusion.tex}
+
+%------------ Exemple ----------------
+\newpage
+\section{Exemple}
+\subfile{Common/Exemple.tex}
+
+\end{document}
